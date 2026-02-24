@@ -1,5 +1,3 @@
----
----
 # Week 1 
 ### method to sum incrementally up to a number of times
 ```
