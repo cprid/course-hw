@@ -66,6 +66,17 @@ x_{n+1}=\rho x_n(1-x_n)
 ```math
 \rho = 0.8, 1.5, 2.8, 3.2, 3.5, 3.65
 ```
+```code
+#rho_vals = [0.8, 1.5, 2.8, 3.2, 3.5, 3.65]
+def logistic_eq(rho, n):
+    # first result x(0) = 0.5
+    results =[0.5]
+    for _ in range(n-1):
+        x_ = rho*results[-1]*(1-results[-1])
+        results.append(x_)
+
+    return results
+```
 ```math
 \begin{aligned}
 For \rho = 0.8 &ensp;   
